@@ -1,0 +1,38 @@
+<div class="container-fluid col-md-12 mainDiv">
+    <h3>Please Enter Your Account Details</h3>
+
+    <form method="post" [formGroup]="requiredForm" novalidate>
+
+        <div class="form-group">
+            <label for="bankInput">Select Bank :</label>
+            <select class="form-control" id="exampleBank" name="exampleBank"
+            #todo formControlName="bankName">
+                <option>SBI</option>
+                <option>ICICI</option>
+                <option>UNION</option>
+            </select>
+        </div>
+
+        
+        <div *ngIf="requiredForm.controls['bankName'].invalid" class="alertmessage">
+            Please Select Bank Name
+        </div>
+        
+
+        <div class="form-group" id="exampleInputAcNoDiv">
+            <label for="acNoInput">Account Number :</label>
+            <input type="number" id="acNo" name="acNo" #acNo class="form-control" 
+                placeholder="Account Number" formControlName="acNum"> 
+        </div>
+
+        <div *ngIf="requiredForm.controls['acNum'].invalid" class="alertmessage">
+            Please Enter Valid Account Number
+        </div>
+
+        <img src="../../../assets/Images/Personal info.png">
+
+        <button class="btn1 btn" type="submit" (click)="onSubmit(todo.value,acNo.value)"><span>CONTINUE</span></button>
+        <button class="btn2 btn" type="reset"><span>CANCEL</span></button>
+
+    </form>    
+</div>

@@ -1,0 +1,33 @@
+<div class="container-fluid col-md-12 mainDiv">
+
+    <h3>Take a landscape photo of <br>cheque that you want to deposit</h3>
+  
+    <div class="chequeDiv">
+      <img src="../../../assets/Images/chequeImage.jpg">
+    </div>
+  
+  
+      <div class="div1 btn btn1">
+      <label for="inputTag">
+        Capture Image<input id="inputTag" type="file"/>          
+      </label>
+  </div>
+    
+  <script>
+        let input = document.getElementById("inputTag");
+        let imageName = document.getElementById("imageName")
+  
+        input.addEventListener("change", ()=>{
+            let inputImage = document.querySelector("input[type=file]").files[0];
+  
+            imageName.innerText = inputImage.name;
+        })
+  </script>
+  
+  <button type="submit" class="btn btn2" (click)="btnClick()">Continue</button>
+  <button type="reset" class="btn btn2">Retake</button>
+  </div>
+  
+  
+  
+  

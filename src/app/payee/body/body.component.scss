@@ -1,0 +1,25 @@
+.mainBackgroundDiv{
+    background-image: url("../../../assets/Images/Splashscreen.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodyDiv{
+    padding-top:80%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.logoImage{
+    width: 150px;
+    height:150px;
+    margin-top: 89%;
+    margin-bottom: 89%;
+    margin-left: 30.5%;
+}
+

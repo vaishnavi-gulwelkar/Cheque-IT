@@ -1,0 +1,65 @@
+.mainDiv{
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+
+div{
+    margin-top: 5%;
+}
+
+div:first-child{
+    margin-top: 10%;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 33px;
+    color: #DD5484;
+    margin-bottom: 10%;
+}
+
+h1{
+    font-weight: bolder;
+    color: #DD5484;
+}
+
+p{
+    font-size: 26px;
+    margin-top: 2%;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.btn1 {
+    width: 100%;
+    height: 45px;
+    margin-top: 6%;
+    background-color: #DD5484;
+    color: white;
+}
+
+.btn2 {
+    width: 100%;
+    height: 45px;
+    margin-top: 4%;
+    border:1px solid #DD5484;
+    background-color: white;
+    color: black;
+}
+
+button>span{
+    font-weight: bold;
+}
+
+.form-control{
+    height: 40px;
+}
+
+form>div{
+    text-align: left;
+}
