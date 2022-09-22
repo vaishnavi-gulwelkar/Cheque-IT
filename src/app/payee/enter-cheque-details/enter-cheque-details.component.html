@@ -5,7 +5,7 @@
         <div class="form-group">
             <label for="payee">Pay To : </label>
             <input type="text" class="form-control" id="payee" [(ngModel)]="acHolder" placeholder="{{ acHolder }}"
-            #payee formControlName="payee">
+            #payee formControlName="payee" readonly>
         </div>
 
         <div *ngIf="requiredForm.controls['payee'].invalid" class="alertmessage">
