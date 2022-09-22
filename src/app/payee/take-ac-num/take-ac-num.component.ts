@@ -47,6 +47,10 @@ export class TakeAcNumComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  btnClick2(){
+    this.router.navigateByUrl('homePage');
+  }
+
   onSubmit(a : string, b : string) 
   {
     let acNo = parseInt(b);
@@ -69,6 +73,15 @@ export class TakeAcNumComponent implements OnInit {
           errorMsg.push(newError);
           this.router.navigateByUrl('pageNotFound');
         }
+      }else{
+          errorMsg.length = 0;
+          const newError: errorMsgInterface = 
+          {
+            error: 'User Not Found'
+          }
+          errorMsg.push(newError);
+          this.router.navigateByUrl('pageNotFound');
+
       }
     } 
   }

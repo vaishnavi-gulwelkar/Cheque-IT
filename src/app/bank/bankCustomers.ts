@@ -18,14 +18,14 @@ export const BankCustomers: bankCustomerInterface[] =
   },
   {
     fullName : 'Rohith Parjane',
-    AccountNumber: 1234567890,
+    AccountNumber: 567502010012733,
     mobNum : 9561487711,
-    debitCard : 1234567890,
+    debitCard : 1122334455,
     dob : '09/11/1998',
-    aadhrCardNum : 1234567890,
+    aadhrCardNum : 3673122404,
     panNum : 'DDPPP1234B',
     email : 'rparjane@gmail.com',
     creditCardNum : 1234567890,
-    bankName : 'SBI'
+    bankName : 'UNION'
   }
 ];

@@ -33,4 +33,8 @@ export class ShowCreditDetailsComponent implements OnInit {
     this.router.navigateByUrl('takePhoto2');
   }
 
+  btnClick2(){
+    this.router.navigateByUrl('homePage');
+  }
+
 }

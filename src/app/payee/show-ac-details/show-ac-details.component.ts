@@ -33,7 +33,7 @@ export class ShowAcDetailsComponent implements OnInit {
   }
 
   btnClick2(){
-    this.router.navigateByUrl('selectMethod');
+    this.router.navigateByUrl('homePage');
   }
 
 

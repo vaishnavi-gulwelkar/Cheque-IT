@@ -4,7 +4,7 @@
     <form>
         <div class="form-group">
             <label for="payee">Pay To : </label>
-            <input type="text" class="form-control" id="payee" placeholder="Pay This Cheque To"
+            <input type="text" class="form-control" id="payee" placeholder="{{ acHolder }}"
             #payee>
         </div>
 
@@ -36,5 +36,5 @@
         <span>CONTINUE</span> 
     </button>
 
-    <button class="btn2 btn" type="reset"> <span>CANCEL</span> </button>
+    <button class="btn2 btn" type="reset" (click)="btnClick2()"> <span>CANCEL</span> </button>
 </div>

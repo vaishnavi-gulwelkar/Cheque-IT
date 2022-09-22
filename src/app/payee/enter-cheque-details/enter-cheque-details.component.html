@@ -4,7 +4,7 @@
     <form method="post" [formGroup]="requiredForm" novalidate>
         <div class="form-group">
             <label for="payee">Pay To : </label>
-            <input type="text" class="form-control" id="payee" placeholder="Pay This Cheque To"
+            <input type="text" class="form-control" id="payee" [(ngModel)]="acHolder" placeholder="{{ acHolder }}"
             #payee formControlName="payee">
         </div>
 

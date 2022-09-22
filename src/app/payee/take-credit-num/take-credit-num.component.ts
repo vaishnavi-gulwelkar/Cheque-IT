@@ -46,7 +46,8 @@ export class TakeCreditNumComponent implements OnInit {
     let creditNum = parseInt(b);
 
     for(let i of this.custList){
-      if(i.bankName == a){
+      if(i.bankName == a)
+      {
         if(i.creditCardNum === creditNum){
           selectedUser.push(i);
           console.log('Selected User : ',selectedUser);
@@ -60,12 +61,21 @@ export class TakeCreditNumComponent implements OnInit {
           this.router.navigateByUrl('pageNotFound');
         }
       }
+      else{
+        errorMsg.length = 0;
+        const newError: errorMsgInterface = 
+        {
+          error: 'User Not Found'
+        }
+        errorMsg.push(newError);
+        this.router.navigateByUrl('pageNotFound');
+      }
     } 
     this.router.navigateByUrl('showCreditDetails');
   }
 
   onCancel(){
-    this.router.navigateByUrl('selectMethod');
+    this.router.navigateByUrl('homePage');
   }
 
 

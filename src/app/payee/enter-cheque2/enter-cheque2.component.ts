@@ -6,6 +6,7 @@ import { bankCustomerInterface } from 'src/app/bankCustomerInterface';
 import { chequeDetailsInterface } from 'src/app/chequeDetailsInterface';
 import { errorMsgInterface } from 'src/app/errorMsgInterface';
 import { errorMsg } from 'src/app/bank/errorMsg';
+import { selectedUser } from '../../bank/selectedUser';
 
 @Component({
   selector: 'app-enter-cheque2',
@@ -26,6 +27,7 @@ export class EnterCheque2Component implements OnInit {
   chequeDate='';
   currentDate='';
   chequeAmount : number = 0;
+  acHolder = '';
 
   chequeDetails : chequeDetailsInterface[] = [];
   chequeList: chequeDetailsInterface[] = chequeDetails;     
@@ -44,6 +46,14 @@ export class EnterCheque2Component implements OnInit {
     document.getElementById('depositDate')?.setAttribute('placeholder',this.fullDate);
     document.getElementById('depositDate')?.setAttribute('value',this.fullDate);
 
+    for(let i=0; i<selectedUser.length; i++){
+      this.acHolder = selectedUser[i].fullName;
+    }
+
+  }
+
+  btnClick2(){
+    this.router.navigateByUrl('homePage');
   }
 
   onSubmit(a : string ,payer : string,chequeDate : string,depositDate : string,amountInNum : string)
